@@ -12,12 +12,12 @@ Y1 = np.cos(10*X1**2) + 0.1*np.sin(100*X1)
 string1 = "("
 string2 = ","
 string3 = ")"
-n = [string1+str(round(X1[i],1))+string2+str(round(Y1[2],1))+string3 for i in range(25)]
+n = [string1+str(round(X1[i],1))+string2+str(round(Y1[i],1))+string3 for i in range(25)]
 fig, ax = plt.subplots()
 ax.set_title('MLE - trigonometric basis function')
 ax.set_xlabel('X axes')
 ax.set_ylabel('Y axes')
-ax.set_xlim([-0.3,1.3])
+ax.set_xlim([-1,1.2])
 ax.set_ylim([-1.2,2.6])
 #ax.scatter(X,Y)
 plt.plot(X,Y, 'r+', label = "Training data")
